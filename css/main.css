@@ -7,8 +7,11 @@ body {
 }
 
 header {
+    background-image: url(/assets/Firefly\ multiple\ pterodactyl\ silhouettes\ clean\ background\ 80656.jpg);
+    background-size: cover;
+    background-position: center;
     background-color: #3B3021;
-    color: #fff;
+    color: black;
     padding: 20px;
     text-align: center;
 }
