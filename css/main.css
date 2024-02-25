@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F3F0E2; 
+    background-color: #F3F0E2;
     color: #333;
 }
 
 header {
-    background-image: url(/assets/Firefly\ multiple\ pterodactyl\ silhouettes\ clean\ background\ 80656.jpg);
+    background-image: url(/assets/Firefly%20multiple%20pterodactyl%20silhouettes%20clean%20background%2080656.jpg);
     background-size: cover;
     background-position: bottom;
     background-color: rgba(59, 48, 33, 0.8);
@@ -16,7 +16,6 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 20px;
     text-align: center;
 }
 
@@ -26,6 +25,7 @@ nav {
     text-align: center;
     display: none;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -37,7 +37,7 @@ main {
 }
 
 footer {
-    background-color: #3B3021; 
+    background-color: #3B3021;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -76,31 +76,35 @@ footer {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px){
-    nav{
+@media screen and (max-width: 768px) {
+    nav {
         display: block;
     }
-    nav a{
+    nav a {
         padding: 10px;
     }
 }
+
 .timeline {
     width: 80%;
     margin: 50px auto;
     position: relative;
-  }
-  .timeline-item {
+}
+
+.timeline-item {
     margin-bottom: 50px;
     position: relative;
     opacity: 0; /* Initially hide items */
     transform: translateY(50px); /* Slide items down */
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  .timeline-item.animate-slide.slide-in {
+}
+
+.timeline-item.animate-slide.slide-in {
     opacity: 1;
     transform: translateY(0);
-  }
-  .timeline-item::before {
+}
+
+.timeline-item::before {
     content: "";
     position: absolute;
     top: 0;
@@ -109,19 +113,22 @@ footer {
     width: 2px;
     height: 100%;
     background-color: #333;
-  }
-  .timeline-item:last-child::before {
+}
+
+.timeline-item:last-child::before {
     height: 50%;
-  }
-  .timeline-item .content {
+}
+
+.timeline-item .content {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1;
-  }
-  .timeline-item .date {
+}
+
+.timeline-item .date {
     font-weight: bold;
     margin-bottom: 10px;
-  }
+}
