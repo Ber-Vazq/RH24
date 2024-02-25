@@ -6,6 +6,7 @@ const path = require('path');
 app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use('/scripts', express.static(path.join(__dirname, 'scripts')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/NES.css-2.3.0', express.static(path.join(__dirname, 'NES.css-2.3.0')));
 
 // Serve index.html from the root directory
 app.get('/', (req, res) => {
