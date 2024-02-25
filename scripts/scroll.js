@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isElementInViewport(item) && !item.classList.contains("slide-in")) {
                     var itemHeight = item.offsetHeight;
                     var itemTop = item.getBoundingClientRect().top;
-                    if (itemTop + itemHeight / 2 <= window.innerHeight) {
+                    if (itemTop + itemHeight <= window.innerHeight) { // Modified condition to check if the item is completely out of view
                         item.classList.add("slide-in");
                     }
                 }
