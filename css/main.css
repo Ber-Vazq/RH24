@@ -20,10 +20,13 @@ header {
 }
 
 nav {
+    position: sticky;
+    top: 0; /* Add this to make the navbar sticky */
     background-color: #556B2F;
     padding: 10px;
     text-align: center;
     display: none;
+    z-index: 1;
 }
 
 nav a {
@@ -131,4 +134,12 @@ footer {
 .timeline-item .date {
     font-weight: bold;
     margin-bottom: 10px;
+}
+.image-info-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the items */
+}
+
+.image-info {
+    margin-left: 20px; /* Add some spacing between the image and the text */
 }
