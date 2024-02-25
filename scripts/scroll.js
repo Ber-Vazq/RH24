@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var lastScrollTop = 0; // Variable to store the last scroll position
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         var timelineItems = document.querySelectorAll(".timeline-item");
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Get the current scroll position
 
         if (scrollTop > lastScrollTop) {
             // Scrolling down
-            timelineItems.forEach(function(item) {
+            timelineItems.forEach(function (item) {
                 if (isElementInViewport(item) && !item.classList.contains("slide-in")) {
                     var itemHeight = item.offsetHeight;
                     var itemTop = item.getBoundingClientRect().top;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         } else {
             // Scrolling up
-            timelineItems.forEach(function(item) {
+            timelineItems.forEach(function (item) {
                 if (!isElementInViewport(item) && !item.classList.contains("slide-out")) {
                     item.classList.add("slide-out");
                 }

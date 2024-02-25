@@ -3,9 +3,9 @@ DINOSAURS(PTERODACTYLS FOR THE WIN)
 
 Project Overview
 -
-Name: DinosaursRFun
+Name: Land of Pterror
 -
 Team: Me, Myself, and I
 -
-Technologies-in-Use: Github Copilot, Google Cloud
+Technologies-in-Use: Github Copilot, Google Cloud, NES.css framework
 -

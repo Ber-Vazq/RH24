@@ -21,7 +21,8 @@ header {
 
 nav {
     position: sticky;
-    top: 0; /* Add this to make the navbar sticky */
+    top: 0;
+    /* Add this to make the navbar sticky */
     background-color: #556B2F;
     padding: 10px;
     text-align: center;
@@ -59,7 +60,8 @@ footer {
     margin: 0 auto;
     border: none;
     width: 100%;
-    height: 400px; /* Adjust the height as needed */
+    height: 400px;
+    /* Adjust the height as needed */
 }
 
 .sketchfab-embed-wrapper p {
@@ -81,20 +83,25 @@ footer {
 
 .img-info-container {
     display: flex;
-    align-items: center; /* Vertically center items */
-    max-width: 100%; /* Limit container width */
+    align-items: center;
+    /* Vertically center items */
+    max-width: 100%;
+    /* Limit container width */
 }
 
 /* Adjust the size of the image */
 .img-info-container img {
-    max-width: 100px; 
-    max-height: 150px; /* Limit image height to half of the viewport height */
-    margin-right: 20px; /* Add some spacing between the image and text */
+    max-width: 100px;
+    max-height: 150px;
+    /* Limit image height to half of the viewport height */
+    margin-right: 20px;
+    /* Add some spacing between the image and text */
 }
 
 /* Style for the text */
 .image-info {
-    flex: 1; /* Allow the text to grow to take up available space */
+    flex: 1;
+    /* Allow the text to grow to take up available space */
 }
 
 /* Add some spacing between paragraphs */
@@ -105,17 +112,24 @@ footer {
 /* Ensure text wraps properly on smaller screens */
 @media screen and (max-width: 768px) {
     .img-info-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start on smaller screens */
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+        /* Align items to the start on smaller screens */
     }
 
     .img-info-container img {
-        max-width: 100%; /* Allow the image to take full width on smaller screens */
-        max-height: auto; /* Reset maximum height */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add some spacing between image and text on smaller screens */
+        max-width: 100%;
+        /* Allow the image to take full width on smaller screens */
+        max-height: auto;
+        /* Reset maximum height */
+        margin-right: 0;
+        /* Remove right margin */
+        margin-bottom: 10px;
+        /* Add some spacing between image and text on smaller screens */
     }
 }
+
 .timeline {
     width: 80%;
     margin: 50px auto;
@@ -125,8 +139,10 @@ footer {
 .timeline-item {
     margin-bottom: 50px;
     position: relative;
-    opacity: 0; /* Initially hide items */
-    transform: translateY(50px); /* Slide items down */
+    opacity: 0;
+    /* Initially hide items */
+    transform: translateY(50px);
+    /* Slide items down */
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -143,7 +159,7 @@ footer {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: #333;
+    background: linear-gradient(to top, #333 0%, #000 50%, #333 100%);
 }
 
 .timeline-item:last-child::before {
