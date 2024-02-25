@@ -9,7 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
             // Scrolling down
             timelineItems.forEach(function(item) {
                 if (isElementInViewport(item) && !item.classList.contains("slide-in")) {
-                    item.classList.add("slide-in");
+                    var itemHeight = item.offsetHeight;
+                    var itemTop = item.getBoundingClientRect().top;
+                    if (itemTop + itemHeight / 2 <= window.innerHeight) {
+                        item.classList.add("slide-in");
+                    }
                 }
                 if (!isElementInViewport(item) && item.classList.contains("slide-out")) {
                     item.classList.remove("slide-out");
