@@ -79,15 +79,43 @@ footer {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        display: block;
-    }
-    nav a {
-        padding: 10px;
-    }
+.img-info-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    max-width: 100%; /* Limit container width */
 }
 
+/* Adjust the size of the image */
+.img-info-container img {
+    max-width: 100px; 
+    max-height: 150px; /* Limit image height to half of the viewport height */
+    margin-right: 20px; /* Add some spacing between the image and text */
+}
+
+/* Style for the text */
+.image-info {
+    flex: 1; /* Allow the text to grow to take up available space */
+}
+
+/* Add some spacing between paragraphs */
+.image-info p {
+    margin-bottom: 10px;
+}
+
+/* Ensure text wraps properly on smaller screens */
+@media screen and (max-width: 768px) {
+    .img-info-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+
+    .img-info-container img {
+        max-width: 100%; /* Allow the image to take full width on smaller screens */
+        max-height: auto; /* Reset maximum height */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add some spacing between image and text on smaller screens */
+    }
+}
 .timeline {
     width: 80%;
     margin: 50px auto;
@@ -134,12 +162,4 @@ footer {
 .timeline-item .date {
     font-weight: bold;
     margin-bottom: 10px;
-}
-.image-info-container {
-    display: flex; /* Use flexbox layout */
-    align-items: center; /* Vertically center the items */
-}
-
-.image-info {
-    margin-left: 20px; /* Add some spacing between the image and the text */
 }
