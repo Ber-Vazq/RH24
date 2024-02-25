@@ -9,13 +9,13 @@ body {
 header {
     background-image: url(/assets/Firefly\ multiple\ pterodactyl\ silhouettes\ clean\ background\ 80656.jpg);
     background-size: cover;
-    background-position: center;
-    background-color: #3B3021;
+    background-position: bottom;
+    background-color: rgba(59, 48, 33, 0.8);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -25,11 +25,6 @@ nav {
     padding: 10px;
     text-align: center;
     display: none;
-}
-
-/* Add styles for the nav when it's active */
-nav.active {
-    display: block;
 }
 nav a {
     color: #fff;
