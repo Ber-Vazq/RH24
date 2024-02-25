@@ -1,4 +1,8 @@
 function toggleMenu() {
     var nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+    } else {
+        nav.classList.add('active');
+    }
 }
